@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Audio Player</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+
+		<div id="audio-image">
+			<img class="cover">
+		</div>
+		
+		<div id="audio-player">
+
+			<div id="audio-info">
+				<span class="artist"></span> - 
+				<span class="title"></span>
+			</div>
+
+			<input id="volume" type="range" min="0" max="10" value="4">
+
+			<div id="buttons">
+				<span>
+					<button id="prev"></button>
+					<button id="play"></button>
+					<button id="pause"></button>
+					<button id="stop"></button>
+					<button id="next"></button>
+				</span>
+			</div>
+
+			<div class="clearfix"></div>
+
+			<div id="tracker">
+
+				<div id="progressBar">
+					<span id="progress"></span>
+				</div>
+
+				<span id="duration">0:00</span>
+
+			</div>
+
+			<div class="clearfix"></div>
+
+			<ul id="playlist" class="hidden">
+				<li song="Linkin Park - A Place For My Head.mp3" cover="cover1.jpg" artist="Linkin Park">A Place For My Head</li>
+				<li song="Linkin Park - By Myself.mp3" cover="cover1.jpg" artist="Linkin Park">By Myself</li>
+				<li song="Linkin Park - Crawling.mp3" cover="cover1.jpg" artist="Linkin Park">Crawling.mp3</li>
+				<li song="Linkin Park - Cure For The Itch.mp3" cover="cover1.jpg" artist="Linkin Park">Cure For The Itch</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+		
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
